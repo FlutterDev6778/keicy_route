@@ -26,8 +26,8 @@ class KeicyRoute extends PageRouteBuilder {
 
   KeicyRoute(
     this.routeName,
-    this.page,
-    this.arguments, {
+    this.page, {
+    this.arguments,
     this.transitionType,
     this.transitionDuration,
     this.opaque,
