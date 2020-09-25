@@ -42,7 +42,6 @@ class KeicyRoute extends PageRouteBuilder {
           opaque: opaque,
           transitionsBuilder: (context, animation, secondaryAnimation, child) {
             var tween = Tween<double>(begin: 0, end: 1).chain(CurveTween(curve: curve));
-            transitionType = transitionType ?? PageTransitionType.fade;
             switch (transitionType) {
               case PageTransitionType.fade:
                 return FadeTransition(
