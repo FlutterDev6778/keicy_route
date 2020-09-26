@@ -35,7 +35,7 @@ class KeicyRoute extends PageRouteBuilder {
   }) : super(
           settings: RouteSettings(
             name: routeName,
-            arguments: arguments,
+            arguments: {"isCheckCookie": false},
           ),
           pageBuilder: (context, animation, secondaryAnimation) => page,
           transitionDuration: transitionDuration,
